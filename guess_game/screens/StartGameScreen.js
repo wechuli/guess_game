@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
     width: 300,
     maxWidth: "80%",
     alignItems: "center",
+    // shadow properties only work on iOS, not Android, use elevation properties for Android
     shadowColor: "black",
     shadowOffset: {
       width: 0,
@@ -38,7 +39,10 @@ const styles = StyleSheet.create({
     },
     shadowRadius: 6,
     shadowOpacity: 0.26,
-    backgroundColor: "white"
+    backgroundColor: "white",
+    elevation: 5,
+    padding: 20,
+    borderRadius: 10
   },
   buttonContainer: {
     flexDirection: "row",
