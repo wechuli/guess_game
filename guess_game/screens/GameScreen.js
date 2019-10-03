@@ -22,7 +22,7 @@ const GameScreen = props => {
     <View>
       <Text>Opponent's guess</Text>
       <NumberContainer selectedNumber={currentGuess} />
-      <Card style={styles.buttonContainer}>
+      <Card additionalStyles={styles.buttonContainer}>
         <Button title="LOWER" />
         <Button title="GREATER" />
       </Card>
