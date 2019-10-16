@@ -19,7 +19,7 @@ const GameScreen = props => {
     generateRandomBetween(1, 100, userChoice)
   );
   return (
-    <View>
+    <View style={styles.screen}>
       <Text>Opponent's guess</Text>
       <NumberContainer selectedNumber={currentGuess} />
       <Card additionalStyles={styles.buttonContainer}>
